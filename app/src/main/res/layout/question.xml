@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/quiz"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ans2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="83dp"
+            android:text="TextView"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/ans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ans2"
+            android:layout_alignBottom="@+id/ans2"
+            android:layout_alignParentStart="true"
+            android:onClick="answered"
+            android:text="Button"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ans4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="12dp"
+            android:onClick="answered"
+            android:text="Button"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/ans3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ans4"
+            android:layout_alignBottom="@+id/ans4"
+            android:layout_alignStart="@+id/ans1"
+            android:onClick="answered"
+            android:text="Button"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/ans4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="45dp"
+            android:onClick="answered"
+            android:text="Button"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.ContentFrameLayout>
