@@ -13,7 +13,7 @@ public class Word {
     public String getTranslation() {
         return this.translation;
     }
-
+ 
 
 
     public Word(String w, String t) {
